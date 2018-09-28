@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>别踩白块</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #eee;
+        }
+        #main{
+            width: 408px;
+            height: 408px;
+            border: 4px solid #000;
+            margin: 0 auto;
+            position: relative;
+            top: 10px;
+            overflow: hidden;
+            background: url(image/bg.jpg) no-repeat;
+            background-size: 200px 200px;
+            background-color: #fff;
+            background-position: 105px 40px;
+        }
+        #container{
+            position: relative;
+            left: 0px;
+            top: -306px;
+            width: 100%;
+            height: auto;
+        }
+        .row{
+            width: 100%;
+            height: 102px;
+            position: relative;
+            left: 0px;
+        }
+        .cell{
+            width: 100px;
+            height: 100px;
+            float: left;
+            border: 1px solid #000;
+            background-color: white;
+        }
+        .black{
+            background-color: black;
+            cursor:pointer;
+        }
+        .red{
+            background-color: red;
+        }
+        #score{
+            text-align: center;
+        }
+        #control{
+            width: 408px;
+            height: 45px;
+            margin: 0 auto;
+            position: relative;
+            top: 10px;
+            border: 4px solid #000;
+        }
+        .command{
+            width: 132px;
+            height: 41px;
+            text-align: center;
+            line-height: 41px;
+            border: 2px solid #000;
+            font-weight: 900;
+            float: left;
+            font-size: 24px;
+            color: #000;
+            background-color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<h1 id="score">分数:0</h1>
+<div id="main">
+    <div id="container"></div>
+</div>
+<div id="control">
+    <div class="command" id="restart">开始</div>
+    <div class="command" id="pause">暂停</div>
+    <div class="command" id="end">结束</div>
+</div> 
+
+<audio src="music/钢琴曲-The Ture That You Leave.mp3" autoplay="true" loop="" volume="60"></audio>
+</body>
+<script src='js/js.js'></script>
+</html>
